@@ -2,10 +2,9 @@ import { Schema } from "mongoose";
 
 export const OrderSchema = new Schema({
 
-    mesa: Number,
-    idUser: String,
+    numeroMesa: Number,
     listProducts: Array,
-    price: Number,
+    state: String,
     createDate: {
         type: Date,
         default: Date.now
